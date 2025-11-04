@@ -9,7 +9,7 @@ library(writexl)
 library(knitr)
 
 #2. Set the path to the main folder
-main_folder <- "G:/Meu Drive/Doutorado UFSC/Disciplinas/Biomecânica/COP"
+main_folder <- "COP_data"
 
 #3. List all COP folders
 file_list <- list.files(path = main_folder,
@@ -101,6 +101,7 @@ glimpse(COP_df)
 # 3. Look at the data
 head(COP_df, 10)
 
+
 #11. Calculate Velocity Columns VELx_cm_s and VELy_cm_s for Subjects
 
 # (1) Define your sampling frequency (2000 Hz)
@@ -109,6 +110,7 @@ SAMPLING_FREQUENCY_HZ <- 2000
 # (2) Calculate the time interval (delta_t)
 # delta_t will be 0.0005 seconds
 delta_t_s <- 1 / SAMPLING_FREQUENCY_HZ
+
 
 # (3) Now, calculate the velocities
 COP_df <- COP_df %>%
@@ -234,3 +236,6 @@ COP_table_data <- COP_final_summary %>%
 # 2. Now, create the formatted table using knitr::kable()
 # The kable() function creates a clean, formatted table
 kable(COP_table_data, caption = "Summary of COP Results")
+# The table will appear in the RStudio Viewer or R Markdown output.
+
+

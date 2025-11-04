@@ -71,6 +71,8 @@ descriptive_stats_subjects <- COP_stats_df %>%
 #View descriptive stats per subject
 print(descriptive_stats_subjects, width = Inf)
 
+#create a table of the descriptive stats per subject
+write_xlsx(descriptive_stats_subjects, path = "COP_descriptive_stats_subjects.xlsx")
 
 #4. Final Analysis condition comparisons for each subject
 #Reshape data for easier analysis considering only low CV
