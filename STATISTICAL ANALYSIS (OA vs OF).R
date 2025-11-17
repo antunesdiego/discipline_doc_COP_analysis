@@ -240,4 +240,7 @@ print(plot_y)
 #both graphics
 plot_x + plot_y
 
+#save graphics png
+ggsave("RMS_Velocity_Practical_Significance.png", plot = plot_x + plot_y, width = 12, height = 6)
+
 # --- END OF SCRIPT ---
