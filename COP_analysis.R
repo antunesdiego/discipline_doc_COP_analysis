@@ -104,8 +104,8 @@ head(COP_df, 10)
 
 #11. Calculate Velocity Columns VELx_cm_s and VELy_cm_s for Subjects
 
-# (1) Define your sampling frequency (2000 Hz)
-SAMPLING_FREQUENCY_HZ <- 2000
+# (1) Define your sampling frequency (1000 Hz)
+SAMPLING_FREQUENCY_HZ <- 1000
 
 # (2) Calculate the time interval (delta_t)
 # delta_t will be 0.0005 seconds
