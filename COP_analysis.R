@@ -108,7 +108,6 @@ head(COP_df, 10)
 SAMPLING_FREQUENCY_HZ <- 1000
 
 # (2) Calculate the time interval (delta_t)
-# delta_t will be 0.0005 seconds
 delta_t_s <- 1 / SAMPLING_FREQUENCY_HZ
 
 
